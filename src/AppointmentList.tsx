@@ -25,11 +25,7 @@ const AppointmentList = ({navigation}: any) => {
 
             <Button
               title="Cancel"
-              onPress={() => { 
-                cancelAppointment(item.id);
-                //  navigation.navigate('BookCoach', {id: item.id});
-                //  console.log('cancelled'); 
-                }}
+              onPress={() => cancelAppointment(item.id)}
             />
           </View>
         )}
@@ -37,10 +33,7 @@ const AppointmentList = ({navigation}: any) => {
           <View style={{ marginBottom: 30 }}>
             <Button
               title="Add Appointment"
-              onPress={() => {
-                navigation.navigate('BookCoach'); 
-                // console.log('cancelled');
-              }}
+              onPress={() =>  navigation.navigate('BookCoach')}
             />
           </View>
         )}
