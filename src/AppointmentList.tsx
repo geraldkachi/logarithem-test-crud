@@ -20,6 +20,7 @@ const AppointmentList = ({navigation}: any) => {
               <Text>Coach: {item.coachName}</Text>
               <Text>Date: {item.date}</Text>
               <Text>Time: {item.time}</Text>
+              <Text>CreatedAt: {item.id}</Text>
             </View>
 
             <Button
